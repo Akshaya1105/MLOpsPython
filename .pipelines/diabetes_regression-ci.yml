@@ -20,7 +20,10 @@ trigger:
 variables:
 - template: diabetes_regression-variables-template.yml
 - group: devopsforai-aml-vg
-
+  # Source Config
+  # The directory containing the scripts for training, evaluating, and registering the model
+- WORKSPACE_SVC_CONNECTION: 'edapmlops_aml'
+    
 pool:
   vmImage: ubuntu-latest
 
